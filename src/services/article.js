@@ -1,17 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 
-const options = {
-    method: 'GET',
-    url: 'https://article-extractor-and-summarizer.p.rapidapi.com/summarize',
-    params: {
-        url: 'https://article-extractor-and-summarizer.p.rapidapi.com/',
-        length: '3'
-    },
-    headers: {
-        'X-RapidAPI-Key': 'ee276dc78dmsh22521d3fbfb0535p1fbc88jsnfac0b2b1bad7',
-        'X-RapidAPI-Host': 'article-extractor-and-summarizer.p.rapidapi.com'
-    }
-};
+
 
 const rapidapiKey = import.meta.env.VITE_RAPID_API_ARTICLE_KEY
 export const articleApi = createApi({
